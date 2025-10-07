@@ -16,7 +16,7 @@ prjID="1poOQ88rBYcHSmdQ8AB87coKtE3GxInRoPZ_sJf_AySuGktr8E8FTeKwP"
 
 if ! which clasp &> /dev/null; then
     sudo npm install -g @google/clasp
-    sudo npm i -S @types/google-apps-script
+    npm install --save-dev @types/google-apps-script
 fi
 
 #Login dell'utente Apps script che ha il progetto da sincronizzare
