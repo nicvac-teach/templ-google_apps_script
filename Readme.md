@@ -1,8 +1,15 @@
-#Sviluppare Google Apps Script con Visual Studio Code
+# 🚀 Sviluppare Google Apps Script con Visual Studio Code
 
-Tutorial Clasp / Google Apps Script
-https://youtu.be/lwxiEB-Mnys?si=9tBKUKbWaT4zzE4x
+https://github.com/google/clasp
 
-Attivare Google API su
-https://script.google.com/home/usersettings?pli=1
+## 📺 Tutorial Clasp / Google Apps Script
+
+[YouTube Tutorial](https://youtu.be/lwxiEB-Mnys?si=9tBKUKbWaT4zzE4x)
+
+## Attivare Google API
+
+🔗 [**Impostazioni Utente Google Apps Script**](https://script.google.com/home/usersettings?pli=1)
+
+## Setup
+Configura ed esegui setup.sh
 

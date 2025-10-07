@@ -1,0 +1,14 @@
+{
+  "name": "templ-google_apps_script",
+  "version": "1.0.0",
+  "description": "## 📺 Tutorial Clasp / Google Apps Script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-apps-script": "^2.0.5"
+  }
+}
