@@ -20,12 +20,20 @@ if ! which clasp &> /dev/null; then
 fi
 
 #Login dell'utente Apps script che ha il progetto da sincronizzare
-clasp login
+# Dopo l'autorizzazione la pagina risponde "This site can't be reached". Copia l'url di quella pagina e
+# incollala sullo stdin di clasp login (in attesa di questo input).
+if ! clasp list &> /dev/null; then
+    clasp login --no-localhost
+fi
 
 # Creo la dir di progetto e la sincronizza con Apps script in remoto
 mkdir -p "${prjDir}"
 
-clasp clone "${prjID}" --rootDir "${prjDir}"
+# Clona il progetto Apps script in locale.
+# Puoi clonarne più di uno in diverse directory
+if [ -z "$(ls -A ${prjDir})" ]; then
+    clasp clone "${prjID}" --rootDir "${prjDir}"
+fi
 
+# Rimane in esecuzione ed esegue il push verso Apps script ad ogni modifica locale.
 clasp push -w
-
