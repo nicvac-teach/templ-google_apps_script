@@ -6,6 +6,7 @@ set -e
 #
 # NOTA!!! più progetti Apps Script possono essere sincronizzati contemporaneamente.
 # Basta eseguire un clasp clone per ogni progetto Apps Script da sincronizzare
+# Puoi farlo da terminale, non necessariamente eseguendo questo script.
 #
 # Nome del progetto da sincronizzare, già esistente su Apps script
 prjDir="Archivio_cdc"
